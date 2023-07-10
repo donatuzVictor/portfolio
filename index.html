@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+            <img src="/assests/logo..png" class="logo" alt="">
+
+                <!-- <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i></i>
+                </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i></i> -->
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="navigateToSection(event, 'header')">Home</a></li>
+                <li><a href="#about" onclick="navigateToSection(event, 'about')">About</a></li>
+                <li><a href="#services" onclick="navigateToSection(event, 'services')">Services</a></li>
+                <li><a href="#portfolio" onclick="navigateToSection(event, 'portfolio')">Portfolio</a></li>
+                <li><a href="#contact" onclick="navigateToSection(event, 'contact')">Contact</a></li>
+
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+              </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i></i>
+
+              
+            </nav>
+
+            <div class="header-text">
+                
+
+                <h1>Hi, I'm <span>Donatus Victor, <br> <p> a Data Analyst</p></span> <br> From Nigeria</h1>
+
+
+            </div>
+          
+        </div>
+    </div>
+    <!--------------------------------------------------About Me---------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assests/don-min-min.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a skilled data analyst and aspiring front-end developer with a background in applied geophysics. I excel in collecting, organizing, and analyzing large datasets using tools like MS Excel and MySQL, and I'm proficient in SQL queries for data manipulation. I'm experienced in utilizing data visualization tools such as Power BI, MS Excel, and Python to create interactive dashboards and reports. In my journey as a front-end developer, I have acquired proficiency in HTML, CSS, and JavaScript, creating intuitive and user-friendly web interfaces. I'm also familiar with version control systems like GitHub and project management tools like Jira. With strong communication skills, I effectively present complex ideas and insights, and my interdisciplinary background allows me to approach problems creatively. I'm driven by excellence, open to new challenges, and seek to contribute to the field of technology by leveraging my skills in data analysis, front-end development, and tools like MS Excel, MySQL, Power BI, Python, HTML, CSS, JavaScript, GitHub, and Jira.</p>
+                    <div class="tab-titles " >
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><a>Analytics</a> <br><span></span>Data and Business Analysis</li>
+                            <li> <a>Web Development</a> <br>Sofware Development</li>
+                    </div>
+
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li> <a>10-2022 - Current</a> <br>Data Analyst Intern CapitalCore Outsourcing Limited, lagos</li>
+                            <li> <a>04-2022 - 09-2022</a> <br>Data Analyst Apprenticeship CapitalCore Outsourcing Limited, lagos</li>
+                            <li><a>03-2021 - 05-2021</a> <br><span></span>Web Development Intern DYF Technology calabar/li>
+                            <li><a>07-2018 - 12-2018</a> <br><span></span>IT Nigeria Meteorological Agency calabar</li>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><a>2022-Present</a> <br><span></span>Software Development Kinplus Technologies </li>
+                            <li><a>2023</a> <br><span></span>Introduction to Data Analytics Corsera </li>
+                            <li> <a>2022</a> <br>Power Bi Data Analytics and Dashboard Creation</li>
+                            <li> <a>2022</a> <br>Theoretical and Practical Understanding of MySQL Sololearn</li>
+                            <li> <a>2022</a> <br>Bsc Applied Geophysics  University of Calabar, nigeria</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------Services---------------------------------------------->
+    <div id="services">
+        <div class="container"></div>
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-column"></i>              
+                       <h2>Data Analysis </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus, saepe libero dolor nobis consequuntur velit! Necessitatibus voluptas rem alias eius odio, asperiores fugit suscipit similique in nostrum, vitae tempore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+                    <h2>web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus, saepe libero dolor nobis consequuntur velit! Necessitatibus voluptas rem alias eius odio, asperiores fugit suscipit similique in nostrum, vitae tempore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+               
+            </div>
+    </div>
+
+    <!-------------------------------------Portfolio----------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assests/movie.png" alt="" width="300px">
+                    <div class="layer">
+                        <h3>Movie Dashboard</h3>
+                        <p>The Dashboard shows the Revenue generated and the top movies</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assests/sales.png" alt="" width="300px">
+                    <div class="layer">
+                        <h3>Sales Dasboard</h3>
+                        <p>The Dashboard shows you the sales of the company</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+           
+        </div>
+    </div>
+
+    <!--------------------------------------------Contact----------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> donatusvictor76@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+2348137790780</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/donatus-victor-"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>                        
+                    </div>
+                    <a href="/assests/My-Resume.pdf" download="" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form id="myForm" action="https://formspree.io/f/xdoroabo" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <div id="msg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Donatus</p>
+        </div>
+    </div>
+
+</body> 
+<script src="main.js"></script>
+
+</html>
