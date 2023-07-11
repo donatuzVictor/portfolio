@@ -324,6 +324,22 @@ nav ul li a:hover::after{
       transition: o.5sc;
     }
 
+    .projects{
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .other-projects{
+      display: flex;
+      justify-content: space-around;
+    }
+    .others{
+      display: flex;
+      justify-content: safe;
+      padding-top: 20px;
+    }
+
+
 
     /****************************************Contact******************************************/
 

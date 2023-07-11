@@ -59,6 +59,7 @@ form.addEventListener('submit', e => {
 });
 
 
+
 //navigation bar withouth showing .html
 function navigateToSection(event, sectionId) {
   event.preventDefault();
