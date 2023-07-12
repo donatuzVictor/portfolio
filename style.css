@@ -11,7 +11,13 @@ html{
 
 body {
     background: #080808;
-    color: #fff
+    color: #fff;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.container{
+  padding-left: 5px;
 }
 
 #header{
@@ -35,9 +41,10 @@ span{
 
 nav {
   display: flex;
-  align-items: right;
+  /* align-items: right; */
   justify-content:space-between;
   flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
 .logo{
@@ -119,6 +126,8 @@ nav ul li a:hover::after{
 .about-col-1 img{
   width: 100%;
   border-radius: 15px;
+  height: 600px;
+  object-fit: cover;
 }
 
 .about-col-2{
@@ -421,10 +430,18 @@ nav ul li a:hover::after{
       visibility: hidden;
     }
 
-    /******************************-Media Queries************************************/
     nav .fas {
       display: none;
     }
+
+    #msg{
+      color: #61b752;
+      margin-top: -40px;
+      display: block;
+    }
+
+    /******************************-Media Queries************************************/
+   
     @media only screen and (max-width:600px){
       #header{     
         background-size:50%;
@@ -432,6 +449,7 @@ nav ul li a:hover::after{
         background-repeat: no-repeat;
         z-index:-1;
         background-position: right center;
+        /* margin-top: -3rem; */
       }
       .header-text {
         margin-top: 100%;
@@ -477,6 +495,7 @@ nav ul li a:hover::after{
         left: 25px;
         cursor: pointer;
       }
+
 
 
       /***********Header***************/
@@ -537,15 +556,109 @@ nav ul li a:hover::after{
         flex-basis: 100%;
         margin-left: 2.5rem;
       }
-      .copyright{
-        font-size: 14px;
-        margin-bottom: 0;
+
+      
+      .sub-title{
+        padding-top: 25px;
       }
-     
+
+      .other-projects{
+        display: flex;
+        flex-direction: column;
+      }
+
+       .copyright{
+        font-size: 14px;
+
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      background: #262626;
+      font-weight: 300;
+      margin-bottom: 80px;
+    }
+    
+
     }
 
-    #msg{
-      color: #61b752;
-      margin-top: -40px;
-      display: block;
+    @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 2) {
+      /* Styles specific to iPhone XR */
+
+      body{
+        max-width: 1020px;
+        margin: 0 auto;
+      }
+      #about{
+        margin-top: -15rem;
+        color: #ababab ;
+      }
+
+      .container{
+        padding-top: -19rem;
+        }
+
+      .sub-title{
+        padding-top: 25px;
+      }
+        .other-projects{
+          display: flex;
+          flex-direction: column;
+        }
+
+        .contact-right{
+          height: 100vh;
+          margin-bottom: -1rem;
+        }
+    
+        .copyright{
+          position: absolute;
+          margin-top: -21rem;
+        }
+  
     }
+
+    @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+      /* Styles specific to iPhone 12 Pro */
+
+      body{
+        max-width: 1020px;
+        margin: 0 auto;
+      }
+      #about{
+        margin-top: -11rem;
+        color: #ababab ;
+      }
+ 
+      
+         .contact-right{
+          height: 100vh;
+          margin-bottom: -1rem;
+        }
+
+        
+      .sub-title{
+        padding-top: 25px;
+      }
+    
+        .copyright{
+          position: absolute;
+          margin-top: -18rem;
+        } 
+    }
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-device-pixel-ratio: 4) {
+      /* Styles specific to Galaxy S8 */
+      body {
+        background-color: yellow;
+        color: black;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    
+     
