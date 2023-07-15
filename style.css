@@ -22,7 +22,7 @@ body {
 
 #header{
   width: 100%;
-  height: 100vh;  
+  /* height: 100vh;   */
 
   /* background-image: url(assests/don-min-min.jpg); */
   background-size:300px;
@@ -439,17 +439,20 @@ nav ul li a:hover::after{
       margin-top: -40px;
       display: block;
     }
-
-    /******************************-Media Queries************************************/
    
-    @media only screen and (max-width:600px){
+     @media only screen and (max-width:600px){
+
+      body {
+        background: #080808;
+        color: #fff;
+        max-width: 1020px;
+    }
       #header{     
         background-size:50%;
         background-position: end;
         background-repeat: no-repeat;
         z-index:-1;
         background-position: right center;
-        /* margin-top: -3rem; */
       }
       .header-text {
         margin-top: 100%;
@@ -460,13 +463,16 @@ nav ul li a:hover::after{
       .header-text h1 {
         font-size: 30px;
         color: white;
-        margin-left: 30px;
         padding-top: 20px;
       }
       .header-text p {
         font-size: 25px;
         color: #ff004f;
-        margin-left: 30px;
+        /* margin-left: 30px; */
+      }
+
+      .header-text span{
+        font-size: 20px;
       }
       nav .fas {
         display: block;
@@ -497,33 +503,35 @@ nav ul li a:hover::after{
       }
 
 
-
-      /***********Header***************/
-
       .header-text {
         display: flex;
         justify-content: space-around;
         margin-top:15%;
         font-size: 30px;
         margin-left: 10px;
+
       }
 
       .header-text{
         margin-top: 10rem;
+        
       }
       
       .header-text h1 p{
         font-size: 20px;
+        text-align: center;
       
       }
       .header-image{
         width: 200px;
         height: 400px;
+
       }
-     
-      /* .about{
-        margin-top: -15rem;
-      } */
+
+      .header-image img{
+        margin-bottom: 22rem;
+      }
+      
       .sub-title{
         font-size: 
         40px;
@@ -533,6 +541,13 @@ nav ul li a:hover::after{
       }
       .about-col-1 {
         margin-bottom: 30px;
+      }
+
+      .about-col-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
       }
 
       .about-col-2{
@@ -582,267 +597,18 @@ nav ul li a:hover::after{
     }
     .btn{
       background: #ff004f;
-  }    
+  }   
+  } 
 
+  @media screen and (max-width:280px) {
+
+    body{
+      margin: 0 auto;
     }
-
-    @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 2) {
-      /* Styles specific to iPhone XR */
-
-      body{
-        max-width: 1020px;
-        margin: 0 auto;
-      }
-      #about{
-        margin-top: -8rem;
-        color: #ababab ;
-      }
-
-      .container{
-        padding-top: -19rem;
-        }
-
-      .sub-title{
-        padding-top: 25px;
-      }
-        .other-projects{
-          display: flex;
-          flex-direction: column;
-        }
-
-        .contact-right{
-          height: 60vh;
-          margin-bottom: -1rem;
-        }
-     
-        .copyright{
-      margin: 20px 0;
-          
-        } 
-        .btn{
-          background: #ff004f;
-      }
-  
-      }
-
-    @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-      /* Styles specific to iPhone 12 Pro */
-
-      body{
-        max-width: 1020px;
-        margin: 0 auto;
-      }
-       #about{
-        margin-top: -12rem;
-      }
-      
-         .contact-right{
-          height: 65vh;
-          margin-bottom: -1rem;
-        }
-
-        
-      .sub-title{
-        padding-top: 25px;
-      }
-      .btn{
-        background: #ff004f;
-    }
-    
-
-    }
-    @media only screen and (min-width:393px){
-      #header{
-        width: 100%;
-        height: 80vh;  
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      
-        /* background-image: url(assests/don-min-min.jpg); */
-        background-size:300px;
-        background-position: end;
-        background-repeat: no-repeat;
-        z-index:-1;
-        background-position: right bottom;
-        margin-bottom: 20px;
-      }
-      .header-text {
-        display: flex;
-        justify-content: space-around;
-        margin-top:15%;
-        font-size: 30px;
-        /* margin-left: 10px; */
-      }
-
-      .header-text h1 {
-        font-size: 30px;
-        color: white;
-        /* margin-left: 30px; */
-        padding-top: 20px;
-      }
-      .header-text p {
-        font-size: 25px;
-        color: #ff004f;
-        /* margin-left: 30px; */
-      }
-      
-      #about{
-        margin-top: -8rem;
-      }
-      .btn{
-        background: #ff004f;
-    }
-    }
-
-    @media only screen and (min-width:360px){
-      .header-text{
-        margin-top: 8rem;
-      }
-      #about{
-        margin-top: -5rem;
-      }
-
-    .btn{
-        background: #ff004f;
-    }
-
-    }
-
-
-  @media only screen and (min-width:412px){
-
-    .header-text{
-      margin-top: 10rem;
-    }
-    }
-  
-    @media only screen and (min-width:820px){
-      
-      #about{
-        margin-top: -8rem;
-      }
-      .about-col-2{
-        margin: -2rem;
-      }
-    
-
-      .copyright{
-        margin-top: -10rem;
-      }
-    }
-    @media only screen and (min-width:768px){
-      
-      #about{
-        margin-top: -8rem;
-      }
-      .about-col-2{
-        margin: -2rem;
-      }
-
-      .copyright{
-        margin-top: -4 rem;
-      }
-    }
-     
-    @media only screen and (min-width:768px){
-      #about{
-        margin-top: -20rem;
-      }
-     
-      .work-list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #contact{
-        height: 50vh;
-      }
-
-      .copyright{
-        margin-top: 3rem;
-      }
-     
-      
-      }
-    
-
-      @media only screen and (min-width:540px){
-        #about{
-          margin-top: 10rem;
-        }
-
-        .about-col-1 img{
-          width: 100%;
-          height: 800px;
-          object-fit: fill
-
-        }
-
-        .services-list{
-          display: flex;
-          flex-direction: column;
-        }
-      }
-
-      @media only screen and (min-width:540px){
-        #about{
-          margin-top: 10rem;
-        }
-
-        .services-list{
-          display: flex;
-          flex-direction: column;
-          
-        }
-      
-      }
-
-      
-      @media only screen and (min-width:1042px){
-        .header-text .header-image img{
-          margin-bottom: 3rem;
-        }
-
-      }
-
-      @media only screen and (min-width:320px){
-        .header-text {
-          margin-top: 5rem;
-        } 
-
-       .about-col-1{
-        margin-top: 6rem;
-      }
-        
-      }
-
-      @media only screen and (min-width:375px){
-        .header-text {
-          display: flex;
-          flex-direction: column;
-
-        }
-        .header-image{
-          width: 100%;
-          /* margin-top: 2rem; */
-          object-fit: cover;
-          margin: 2rem -0.5rem;
-        }
-
-      }
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-  
+    .header-text h1{
+      text-align: center;
+      font-size: 20px;
+    }    
+  }
+   
+ 
